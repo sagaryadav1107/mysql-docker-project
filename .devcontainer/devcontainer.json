@@ -1,9 +1,12 @@
 
+
 {
-  "name": "MySQL 8.4 Docker Project",
+  "name": "MySQL 8.4 Docker Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
   },
-  "runArgs": ["--privileged"]
+  "privileged": true
 }
